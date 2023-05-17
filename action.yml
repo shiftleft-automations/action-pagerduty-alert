@@ -4,9 +4,18 @@ inputs:
   pagerduty-integration-key:
     description: 'The integration key for your PagerDuty service'
     required: true
+  severity:
+    description: 'Alert severity (critical, error, warning or info)'
+    required: false    
+  source:
+    description: 'The source of the alert'
+    required: false
+  summery:
+    description: 'The summery to send to PagerDuty'
+    required: false
   pagerduty-dedup-key:
     description: 'The key used to correlate PagerDuty triggers, acknowledges, and resolves for the same alert.'
-    required: false
+    required: false    
 runs:
   using: 'node12'
   main: 'index.js'
