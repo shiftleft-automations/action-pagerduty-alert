@@ -23,7 +23,7 @@ async function sendAlert(alert) {
 try {
   const integrationKey = core.getInput('pagerduty-integration-key');
   
-  const SUMMARY = core.getInput("summery") ? core.getInput("summery") : 
+  const SUMMARY = core.getInput("summary") ? core.getInput("summary") : 
   `${context.repo.repo}: Error in "${context.workflow}" run by @${context.actor}`
   
   const SURCE = core.getInput("source") ? core.getInput("source") : 'GitHub Actions'
