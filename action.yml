@@ -10,8 +10,8 @@ inputs:
   source:
     description: 'The source of the alert'
     required: false
-  summery:
-    description: 'The summery to send to PagerDuty'
+  summary:
+    description: 'The summary to send to PagerDuty'
     required: false
   pagerduty-dedup-key:
     description: 'The key used to correlate PagerDuty triggers, acknowledges, and resolves for the same alert.'
