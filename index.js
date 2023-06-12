@@ -35,7 +35,7 @@ try {
       summary: SUMMARY,
       timestamp: new Date().toISOString(),
       source: SURCE,
-      severity: 'critical',
+      severity: SEVERITY,
       custom_details: {
         run_details: `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
         related_commits: context.payload.commits
